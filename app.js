@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const cron = require("node-cron");
-
+const PORT = process.env.PORT || 3000;
 const {
   getAllPincodes,
   getPinCodesPerChatId,
@@ -55,6 +55,6 @@ cron.schedule(
   true
 );
 
-app.listen(3000, () => {
-  console.log("server started!!!");
+app.listen(PORT, () => {
+  console.log("server started at " + PORT);
 });
