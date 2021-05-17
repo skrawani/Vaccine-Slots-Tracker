@@ -1,0 +1,53 @@
+server started!!!
+Availble Slots : 
+
+*Date : 15-05-2021* 
+centerName :	CHC BERMO 2.0
+avlSlots :	0
+minAgeLimit :	18
+vaccine :	COVISHIELD
+
+centerName :	HSC GOBINDPUR Bermo
+avlSlots :	0
+minAgeLimit :	18
+vaccine :	COVISHIELD
+
+*Date : 16-05-2021* 
+centerName :	CHC BERMO 2.0
+avlSlots :	1
+minAgeLimit :	18
+vaccine :	COVISHIELD
+
+centerName :	HSC GOBINDPUR Bermo
+avlSlots :	0
+minAgeLimit :	18
+vaccine :	COVISHIELD
+
+
+Email sent
+Availble Slots : 
+
+*Date : 15-05-2021* 
+centerName :	CHC BERMO 2.0
+avlSlots :	0
+minAgeLimit :	18
+vaccine :	COVISHIELD
+
+centerName :	HSC GOBINDPUR Bermo
+avlSlots :	0
+minAgeLimit :	18
+vaccine :	COVISHIELD
+
+*Date : 16-05-2021* 
+centerName :	CHC BERMO 2.0
+avlSlots :	1
+minAgeLimit :	18
+vaccine :	COVISHIELD
+
+centerName :	HSC GOBINDPUR Bermo
+avlSlots :	0
+minAgeLimit :	18
+vaccine :	COVISHIELD
+
+
+running a task every minute
