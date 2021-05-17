@@ -16,6 +16,7 @@ const {
 const { sendNotifcation } = require("./modules/telegramBotHelper");
 const emailHelper = require("./modules/emailHelper");
 const got = require("got");
+const axios = require("axios");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -61,11 +62,21 @@ app.get("/", async (req, res) => {
     month: "2-digit",
     year: "numeric",
   });
-  const pinCode = 829114;
+  const pinCode = 751024;
   const apiUrl = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=${pinCode}&date=${date}`;
+  let options = {
+    headers: {
+      "User-Agent": "xyz-bla-bla",
+    },
+  };
+  // const tempData = await got(apiUrl,);
+  try {
+    const response = await axios.get(apiUrl, options);
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
 
-  const tempData = await got(apiUrl);
-  console.log(tempData);
   res.send("Hey Telegram Bot");
 });
 
