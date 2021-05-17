@@ -6,8 +6,8 @@ const {
   delPincodes,
   allPincodesbyChatId,
 } = require("../models/pincodeService");
-const token = "1836235084:AAHcmtljTuAfO5evMFJW1qsYXBfznf5KgRw";
-const bot = new TelegramBot(token, { polling: true });
+
+const bot = new TelegramBot(process.env.TELEGRAM_TOKEN, { polling: true });
 
 const sendNotifcation = (chatId, data) => {
   data = `Availble Slots : \n\n` + data;
