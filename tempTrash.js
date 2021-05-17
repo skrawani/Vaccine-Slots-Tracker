@@ -163,4 +163,3 @@ const telegramBot = () => {
     res.send("test");
   });
 
-    "start": "pm2 start app.js -l ./server.txt",
