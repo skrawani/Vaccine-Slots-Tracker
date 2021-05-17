@@ -65,9 +65,15 @@ app.get("/", async (req, res) => {
   const pinCode = 751024;
   const apiUrl = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=${pinCode}&date=${date}`;
   let options = {
-    headers: {
-      "User-Agent": "xyz-bla-bla",
-    },
+    headers = {
+      'accept': 'application/json, text/plain',
+      'accept-encoding': 'gzip, deflate, br',
+      'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+      'origin': 'https://www.cowin.gov.in',
+      'referer': 'https://www.cowin.gov.in/',
+      'user-agent':
+        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36',
+    }
   };
   // const tempData = await got(apiUrl,);
   try {
