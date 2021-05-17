@@ -54,6 +54,9 @@ cron.schedule(
   },
   true
 );
+app.get("/", (req, res) => {
+  res.send("Hey Telegram Bot");
+});
 
 app.listen(PORT, () => {
   console.log("server started at " + PORT);
